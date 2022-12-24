@@ -1,42 +1,33 @@
-// let character = "Elias"
-// let age = 30
-// let isBlackBelt = false
-// // character=20
-// character = "kibret"
-// age = 40
+//explicit type
+let character: string
+let age: number
+let loggedin: boolean
+// age='elias'
+age = 30
+loggedin=true
 
-// isBlackBelt = true
+//array
+
+let ninjas: string[]
+// ninjas.push('elias') //canot push to empty array
+ninjas = ['10', '30']
+// ninjas.push(30)
+console.log(ninjas)
+
+//* union Types
+let mixed: (string |number |boolean)[]=[]
+
+mixed.push('hello')
+mixed.push(20)
+mixed.push(false)
 
 
-// const circ = (diameter:number) => {
-// return diameter*Math.PI
-// }
+let uid:string|number
 
-// console.log(circ(30))
-
-
-let names = ['luig', 'mario', 'yoshi']
-names.push('toald')
-// names.push(3)
-// names[0]=40
-let numbers = [10, 20, 30, 40]
-// numbers.push(24)
-// numbers.push('elias')
-
-let mixed = ['ken', '4', 'chun', 8, 9]
-mixed[0] = 3
-
-// Objects
-let ninja = {
-    name: 'mario',
-    belt: 'black',
-    age:30
-}
-ninja.age = 40
-ninja.name = 'elias'
-// ninja.skills = ['fignting', 'sneaking']
-ninja = {
-    name: 'elias',
-    belt: 'orange',
-    age:30
+//Object
+let ninjaOne={name:'yesh',age:30}
+let ninjaTwo:{
+    name:string,
+    age: number,
+    beltColoer:string
 }
