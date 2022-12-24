@@ -1,19 +1,9 @@
-let greatHello = () => {
-    console.log('hello world')
+
+type StringOrNum = string | number
+type ObjWithNum={name:string ,uid:StringOrNum}
+const logDetails = (uid: StringOrNum, item: string) => {
+    console.log(`${item} has a uid of ${uid} `)
 }
-
-let great: Function
-
-
-const add = (a:number,b:number,c:number| string=10):void => {
-    console.log(a + b)
-    console.log(c)
+const great = (user: ObjWithNum) => {
+    console.log(`${user}`)
 }
-add(5,10)
-// great='elias'
-
-const minus = (a: number, b: number):number => {
-    return a+b
-}
-let result = minus(10, 7)
-// result='eldmlsm'
