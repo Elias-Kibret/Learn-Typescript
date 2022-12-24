@@ -9,9 +9,9 @@
 
 
 class Invoice{
-    client: string;
-    details: string;
-    amount: number;
+    readonly client: string;
+    private details: string;
+    public amount: number;
 
     constructor(c: string, d: string, a: number) {
         this.client = c;
@@ -27,6 +27,11 @@ const invoiceOne = new Invoice('elias', 'work', 200)
 const invoiceTwo = new Invoice('Kibret', 'work', 300)
 
 let invoice: Invoice[] = []
+invoice.push(invoiceOne)
+invoice.push(invoiceTwo)
+invoice.forEach(inv => {
+    console.log(inv.client,inv.amount,inv.format())
+})
 
 console.log(invoiceOne,invoiceTwo)
 

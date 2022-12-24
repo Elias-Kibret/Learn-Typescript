@@ -18,6 +18,11 @@ class Invoice {
 const invoiceOne = new Invoice('elias', 'work', 200);
 const invoiceTwo = new Invoice('Kibret', 'work', 300);
 let invoice = [];
+invoice.push(invoiceOne);
+invoice.push(invoiceTwo);
+invoice.forEach(inv => {
+    console.log(inv.client, inv.amount, inv.format());
+});
 console.log(invoiceOne, invoiceTwo);
 const form = document.querySelector('.new-item-form');
 const type = document.querySelector("#type");
