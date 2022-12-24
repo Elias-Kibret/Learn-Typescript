@@ -11,5 +11,9 @@ export class ListTempate{
         const p = document.createElement('p')
         p.innerHTML = item.format()
         li.append(p)
+
+        if (pos === 'start') {
+            this.container.prepend(li)
+        }
     }
 }
