@@ -1,42 +1,21 @@
-// let character = "Elias"
-// let age = 30
-// let isBlackBelt = false
-// // character=20
-// character = "kibret"
-// age = 40
+let age: any = 25
+age = 'twenyfive'
 
-// isBlackBelt = true
+age = true
 
 
-// const circ = (diameter:number) => {
-// return diameter*Math.PI
-// }
+let mixed: any[] = []
 
-// console.log(circ(30))
+mixed.push(5)
+mixed.push('mario')
+mixed.push(false)
 
 
-let names = ['luig', 'mario', 'yoshi']
-names.push('toald')
-// names.push(3)
-// names[0]=40
-let numbers = [10, 20, 30, 40]
-// numbers.push(24)
-// numbers.push('elias')
-
-let mixed = ['ken', '4', 'chun', 8, 9]
-mixed[0] = 3
-
-// Objects
-let ninja = {
-    name: 'mario',
-    belt: 'black',
-    age:30
+let ninja: {
+    name: any,
+    age:any
 }
-ninja.age = 40
-ninja.name = 'elias'
-// ninja.skills = ['fignting', 'sneaking']
 ninja = {
     name: 'elias',
-    belt: 'orange',
-    age:30
+    age:'eli'
 }
