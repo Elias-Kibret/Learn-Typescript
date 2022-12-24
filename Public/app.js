@@ -1,26 +1,10 @@
-"use strict";
 // const anchor = document.querySelector('a')!
 // if (anchor) {
 //     console.log(anchor.href)
 // }
 // console.log(anchor.href)
 // const form=document.querySelector('form')
-class Invoice {
-    // readonly client: string;
-    // private details: string;
-    // public amount: number;
-    constructor(client, details, amount) {
-        this.client = client;
-        this.details = details;
-        this.amount = amount;
-        // this.client = c;
-        // this.details = d;
-        // this.amount=a
-    }
-    format() {
-        return `${this.client} owes E${this.amount}`;
-    }
-}
+import { Invoice } from './classes/invoice.js';
 const invoiceOne = new Invoice('elias', 'work', 200);
 const invoiceTwo = new Invoice('Kibret', 'work', 300);
 let invoice = [];
