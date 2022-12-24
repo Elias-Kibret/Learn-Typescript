@@ -7,6 +7,32 @@
 
 // const form=document.querySelector('form')
 
+//Interfaces
+
+interface isPerson{
+    name: string,
+    age: number,
+    speak(a: string): void,
+    spend(a:number):number
+}
+
+const me: isPerson = {
+    name: 'elias',
+    age: 20,
+    speak(text: string): void{
+        console.log(text)
+    },
+    spend(amount: 30): number{
+        return 30
+    },
+}
+// console.log(me)
+
+const greetPerson = (person: isPerson) => {
+    console.log('hello' ,person.age)
+}
+
+greetPerson(me)
 
 import {Invoice} from './classes/invoice.js'
 
