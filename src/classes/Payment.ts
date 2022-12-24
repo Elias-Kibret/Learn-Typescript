@@ -1,11 +1,11 @@
 import {HasFormater } from '../Interfaces/HasFormater.js'
-export class Invoice implements HasFormater{
+export class Payment implements HasFormater{
     // readonly client: string;
     // private details: string;
     // public amount: number;
 
     constructor(
-        readonly client: string,
+        readonly recipient: string,
         private details: string,
         public amount :number
     ) {
@@ -14,6 +14,6 @@ export class Invoice implements HasFormater{
         // this.amount=a
     }
     format() {
-        return `${this.client} owes E${this.amount}`
+        return `${this.recipient} owed E${this.amount}`
     }
 }
