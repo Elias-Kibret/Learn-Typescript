@@ -1,9 +1,29 @@
+// let great:Function
 
-type StringOrNum = string | number
-type ObjWithNum={name:string ,uid:StringOrNum}
-const logDetails = (uid: StringOrNum, item: string) => {
-    console.log(`${item} has a uid of ${uid} `)
+
+//Example 1
+let greet: (a: string, b: string) => void
+
+greet = (name: string, greeting: string) => {
+    console.log(`${name} says ${greeting}`)
 }
-const great = (user: ObjWithNum) => {
-    console.log(`${user}`)
+
+let calc: (a: number, b: number, c: string) => number
+
+calc = (numOne: number, numTwo: number, action: string):number => {
+    if (action === 'add') {
+        return numOne+numTwo
+    }
+    else {
+        return numOne-numTwo
+    }
+}
+
+// Example
+let LogFDetails: (obj: { name: string, age: number }) => void
+
+type person = { name: string, age: number }
+    
+LogFDetails = (ninja: person) => {
+    console.log(`${ninja.name} is ${ninja.age} years old`)
 }
